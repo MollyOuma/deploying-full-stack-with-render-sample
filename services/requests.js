@@ -2,7 +2,8 @@ const fetch = require('node-fetch'); // import node-fetch (enables the fetch API
 const { Pool } = require('pg'); // import node-postgres
 
 const pool = new Pool({ // create connection to database
-  connectionString: process.env.DATABASE_URL,	// use DATABASE_URL environment variable from Render app 
+  connectionString: postgres://activities_user:jUwbfdntD3ytgEQq1ClfXU7uu50v5KHy@dpg-clad7q62eqrc73992f5g-a/activity_database_z08r
+    // use DATABASE_URL environment variable from Render app 
   ssl: {
     rejectUnauthorized: false // don't check for SSL cert
   }
